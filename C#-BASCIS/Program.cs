@@ -77,6 +77,21 @@ namespace C_sharp_BASCIS //namespace is used to organize code and is a container
             //Constants in C#:
             const double PI = 3.14159; //constant variable declaration using 'const' keyword before variable type
             //if you try to change the value of PI later in the code it will give error
+            //for displaying Strings, variables values we can use '+' operator to concatenate them
+            Console.WriteLine("Constant PI: " + PI);
+            //here Constant PT is string and PI is double but '+' operator can concatenate them without any issue.
+            Console.WriteLine(5 + myInt);
+            Console.WriteLine("integer:" + myInt + 10)
+            /*this will print integer:1010 bcz '+' operator concatenates myInt value(10) with 10 as string.
+            i.e due to concatenation integer:10 will be consider as string 
+            and then 10 will be concatenated to it resulting in integer:1010*/
+            //this is called operator overloading where same operator behaves differently based on context.
+            Console.WriteLine("integer:" + (myInt + 10));
+            //this will print integer:20 bcz due to paranthesis and presidency level parathesis will be solve first then concatenation will happend with string
+            //i.e if both are string it will combine them and if both are numeric both will get add
+            //if one is string and one is numeric it will still combine them
+            //by this we can understand different nature of " + " operator.
+
             Console.ReadLine();
         }
     }
